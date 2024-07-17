@@ -1,0 +1,54 @@
+.item {
+  background-color: var(--mainWhite);
+  line-height: 1.5rem;
+  /* 줄 간격을 1.5rem로 설정합니다. */
+  padding: 10px 20px;
+  margin-bottom: 1rem;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  /* 이 요소를 플렉스 컨테이너로 설정하여, 자식 요소들을 플렉스 아이템으로 만듭니다. */
+  justify-content: space-between;
+  transition: all 0.3s linear;
+  /* 모든 스타일 변화를 0.3초 동안 선형으로 애니메이션합니다. */
+}
+
+.item:hover {
+  width: 100%;
+  transform: scale(1.02);
+  /* 마우스를 올렸을 때 요소를 1.02배 확대합니다. */
+}
+
+.info {
+  flex: 0 0 60%;
+  /* 이 요소가 부모 플렉스 컨테이너에서 60%의 너비를 차지하도록 설정합니다. (성장하지 않고, 기본 크기로 설정) */
+  display: flex;
+  justify-content: space-between;
+}
+
+.expense {
+  margin-right: 2rem;
+}
+
+.amount {
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 1px 3px;
+}
+
+.clear-btn,
+.edit-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  outline: none;
+  /* 포커스 시 외곽선을 없앱니다 */
+  cursor: pointer;
+}
+
+.clear-btn {
+  color: var(--mainRed);
+}
+
+.edit-btn {
+  color: var(--mainGreen);
+}
