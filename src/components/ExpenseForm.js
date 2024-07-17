@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./ExpenseForm.css";
+import { MdSend } from "react-icons/md";
 
 export class ExpenseForm extends Component {
   // ExpenseForm이라는 클래스형 컴포넌트를 정의합니다. 이 컴포넌트는 Component를 상속받습니다.
@@ -33,6 +34,7 @@ export class ExpenseForm extends Component {
         </div>
         <button type="submit" className="btn">
           제출
+          <MdSend className="btn-icon" />
         </button>
       </form>
     );

@@ -20,3 +20,36 @@ body {
 h1 {
   margin: 1rem 0;
 }
+
+.btn {
+  text-decoration: none;
+  /* 텍스트에 밑줄 등의 장식을 없앱니다. */
+  color: var(--mainWhite);
+  background-color: var(--primaryColor);
+  text-align: center;
+  letter-spacing: 0.5px;
+  /* 글자 사이의 간격을 0.5픽셀로 설정합니다. */
+  font-size: 14px;
+  outline: 0;
+  border: none;
+  border-radius: 2px;
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  /* 요소의 줄 높이를 36픽셀로 설정하여 텍스트를 수직으로 가운데 정렬합니다. */
+  padding: 0 36px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s linear;
+  display: flex;
+  align-items: center;
+}
+
+.btn:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn-icon {
+  margin-left: 0.75rem;
+  font-size: 1.25rem;
+}
